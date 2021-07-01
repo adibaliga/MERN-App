@@ -3,8 +3,8 @@ const app = express();
 const mongoose = require("mongoose");
 const Subscriber = require('./model')
 
-
-mongoose.connect("mongodb://localhost/todos",{ useUnifiedTopology: true,useNewUrlParser: true });
+const uri = "mongodb+srv://test:mohandas@cluster0.mvtr1.mongodb.net/todos?retryWrites=true&w=majority";
+mongoose.connect(uri,{ useUnifiedTopology: true,useNewUrlParser: true });
 const db=mongoose.connection
 db.on('error',(error)=>console.log(error));
 db.once('open',()=>console.log('connected to Database todo'));
