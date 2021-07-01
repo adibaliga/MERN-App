@@ -17,7 +17,7 @@
 }
 
 #customers tr th{
-  color: black;
+  color: white;
   text-align: center;
 }
 
@@ -69,7 +69,7 @@
 button {
   background-color: #af1ce9;
   border: 2px solid white;
-  color: rgb(2, 2, 2);
+  color: rgb(253, 253, 253);
   padding: 8px 16px;
   text-align: center;
   text-decoration: none;
